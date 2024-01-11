@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /resume/
+
+Sitemap: http://www.nicolekeeney.com/sitemap.xml
