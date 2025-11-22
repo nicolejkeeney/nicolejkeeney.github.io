@@ -9,6 +9,7 @@
 
 .vertical-timeline-element p {
     color: rgb(39, 40, 34);
+    white-space: pre-line;
 }
 
 .vertical-timeline-element h3 {
@@ -34,5 +35,200 @@
 @media screen and (max-width: 1170px) {
     .vertical-timeline-element .vertical-timeline-element-date {
         color: rgb(39, 40, 34);
+    }
+}
+
+// Filter controls
+.filter-controls {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem 0 3rem;
+    flex-wrap: wrap;
+}
+
+.filter-button {
+    padding: 0.75rem 1.5rem;
+    border: 2px solid;
+    border-radius: 25px;
+    font-family: 'Courier Prime', monospace;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: capitalize;
+
+    &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    &.active {
+        transform: scale(1.05);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .filter-controls {
+        gap: 0.5rem;
+    }
+
+    .filter-button {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+}
+
+// Timeline links
+.timeline-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 1rem;
+}
+
+.timeline-link-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.6rem 1.2rem;
+    border: 2px solid;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    background-color: white;
+
+    .link-icon-emoji {
+        font-size: 1.2rem;
+        flex-shrink: 0;
+        display: inline-block;
+        transition: transform 0.3s ease;
+    }
+
+    // Override global white color for FontAwesome icons in badges
+    .svg-inline--fa {
+        color: inherit;
+    }
+
+    &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+        background-color: rgba(0, 0, 0, 0.02);
+
+        .link-icon-emoji {
+            transform: scale(1.15) rotate(5deg);
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .timeline-links {
+        gap: 0.5rem;
+    }
+
+    .timeline-link-badge {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.75rem;
+
+        .link-icon {
+            font-size: 0.8rem;
+        }
+    }
+}
+
+// Position entries styling
+.positions-container {
+    margin-top: 1rem;
+}
+
+// Stacked position titles (for shared description layout)
+.position-titles-stack {
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+
+    .position-header-stacked {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        gap: 0.5rem;
+        padding: 0.4rem 0;
+
+        .position-title {
+            font-size: 1.05rem;
+            color: rgb(39, 40, 34);
+            font-weight: 600;
+        }
+
+        .position-date {
+            font-size: 0.85rem;
+            color: #666;
+            font-style: italic;
+            white-space: nowrap;
+        }
+    }
+}
+
+.position-entry {
+    &.mt-3 {
+        margin-top: 1.5rem;
+        padding-top: 1.5rem;
+        border-top: 1px dashed rgba(0, 0, 0, 0.15);
+    }
+
+    .position-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        margin-bottom: 0.5rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+
+        .position-title {
+            font-size: 1.1rem;
+            color: rgb(39, 40, 34);
+            font-weight: 600;
+        }
+
+        .position-date {
+            font-size: 0.9rem;
+            color: #666;
+            font-style: italic;
+        }
+    }
+
+    .position-description {
+        margin: 0.5rem 0;
+        line-height: 1.6;
+        white-space: pre-line;
+    }
+
+    .position-description-list {
+        margin: 0.5rem 0;
+        line-height: 1.6;
+        padding-left: 1.5rem;
+
+        li {
+            margin-bottom: 0.5rem;
+            color: rgb(39, 40, 34);
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .position-entry {
+        .position-header {
+            flex-direction: column;
+            align-items: flex-start;
+
+            .position-date {
+                font-size: 0.85rem;
+            }
+        }
     }
 }

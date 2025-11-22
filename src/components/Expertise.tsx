@@ -1,44 +1,58 @@
 import React from "react";
 import '@fortawesome/free-regular-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faReact, faDocker, faPython } from '@fortawesome/free-brands-svg-icons';
+import { faPython, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faEarthAmericas, faCloud } from '@fortawesome/free-solid-svg-icons';
 import Chip from '@mui/material/Chip';
 import '../assets/styles/Expertise.scss';
 
 const labelsFirst = [
-    "React",
-    "TypeScript",
-    "JavaScript",
-    "HTML5",
-    "CSS3",
-    "SASS",
-    "Flask",
     "Python",
-    "SQL",
-    "PostgreSQL",
-    "Postman"
+    "R",
+    "Google Earth Engine",
+    "xarray",
+    "zarr",
+    "cartopy",
+    "pandas",
+    "numpy",
+    "scipy",
+    "Dask",
+    "geopandas",
+    "rasterio", 
+    "intake",
+    "holoviews",
+    "Streamlit",
 ];
 
 const labelsSecond = [
-    "Git",
-    "GitHub Actions",
-    "Docker",
     "AWS",
-    "Azure",
-    "Linux",
-    "Snowflake",
-    "Pandas",
-    "Selenium",
+    "Google Cloud",
+    "HPC",
+    "Slurm",
+    "Docker",
+    "parallel processing",
+    "high-throughput computing", 
+    "cloud-optimized data"
 ];
 
 const labelsThird = [
-    "OpenAI",
-    "Groq",
-    "LangChain",
-    "Qdrant",
-    "Hugging Face",
-    "LlamaIndex",
-    "Streamlit",
+    "flood mapping","statistical modelling",
+    "satellite data analysis",
+    "biometeorology/ecohydrology",
+    "climate model analysis",
+    "cryospheric sciences",
+    "climate/hazard dataset generation",
+    "atmospheric modelling for public health applications",
+];
+
+const labelsFourth = [
+    "open source library development",
+    "technical documentation",
+    "reproducible workflows",
+    "Jupyter Notebooks",
+    "scientific communication",
+    "unit testing",
+    "GitHub",
 ];
 
 function Expertise() {
@@ -48,11 +62,10 @@ function Expertise() {
             <h1>Expertise</h1>
             <div className="skills-grid">
                 <div className="skill">
-                    <FontAwesomeIcon icon={faReact} size="3x"/>
-                    <h3>Full Stack Web Development</h3>
-                    <p>I have built a diverse array of web applications from scratch using modern technologies such as React and Flask. I have a strong proficiency in the SDLC process and frontend + backend development.</p>
+                    <FontAwesomeIcon icon={faPython} size="3x"/>
+                    <h3>Scientific Programming</h3>
+                    <p>Experienced in developing data analysis pipelines, processing large climate datasets & satellite imagery, and building interactive data visualizations using Python, R, and modern scientific computing libraries. My happy place is bridging the gap between science, software development, and big data.</p>
                     <div className="flex-chips">
-                        <span className="chip-title">Tech stack:</span>
                         {labelsFirst.map((label, index) => (
                             <Chip key={index} className='chip' label={label} />
                         ))}
@@ -60,11 +73,10 @@ function Expertise() {
                 </div>
 
                 <div className="skill">
-                    <FontAwesomeIcon icon={faDocker} size="3x"/>
-                    <h3>DevOps & Automation</h3>
-                    <p>Once the application is built, I help clients set up DevOps testing, CI/CD pipelines, and deployment automation to support the successful Go-Live.</p>
+                    <FontAwesomeIcon icon={faCloud} size="3x"/>
+                    <h3>Cloud & High-Performance Computing</h3>
+                    <p>Skilled in executing and optimizing large-scale computational workflows on HPC clusters and cloud platforms, with expertise in parallel processing.</p>
                     <div className="flex-chips">
-                        <span className="chip-title">Tech stack:</span>
                         {labelsSecond.map((label, index) => (
                             <Chip key={index} className='chip' label={label} />
                         ))}
@@ -72,16 +84,27 @@ function Expertise() {
                 </div>
 
                 <div className="skill">
-                    <FontAwesomeIcon icon={faPython} size="3x"/>
-                    <h3>GenAI & LLM</h3>
-                    <p>Stay relevant in the market by leveraging the latest AI models in your projects. I have professional experience building enterprise grade GenAI-enabled solutions to empower intelligent decision making.</p>
+                    <FontAwesomeIcon icon={faGithub} size="3x"/>
+                    <h3>Open Science & Software</h3>
+                    <p>Passionate about making science & code accessible and reproducible through open source software and clear documentation.</p>
                     <div className="flex-chips">
-                        <span className="chip-title">Tech stack:</span>
+                        {labelsFourth.map((label, index) => (
+                            <Chip key={index} className='chip' label={label} />
+                        ))}
+                    </div>
+                </div>
+
+                <div className="skill">
+                    <FontAwesomeIcon icon={faEarthAmericas} size="3x"/>
+                    <h3>Atmospheric & Earth Science</h3>
+                    <p>With extensive research experience across atmospheric & earth science disciplines, and degrees in Hydrologic Science & Engineering (M.S.) and Atmospheric Science (B.A.), I bring a strong scientific perspective to my software engineering work.</p>
+                    <div className="flex-chips">
                         {labelsThird.map((label, index) => (
                             <Chip key={index} className='chip' label={label} />
                         ))}
                     </div>
                 </div>
+
             </div>
         </div>
     </div>

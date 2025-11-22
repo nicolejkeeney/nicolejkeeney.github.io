@@ -40,20 +40,38 @@
         font-size: 1.5em;
         margin-block-start: 0px;
         margin-block-end: 0px;
+        font-family: 'Courier Prime', monospace;
     }
 
     h1 {
         font-size: 5em;
         margin-block-start: 0px;
         margin-block-end: 0px;
+        font-family: 'Courier Prime', monospace;
     }
 }
 
 .about-section .image-wrapper {
     z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
     img {
         width: 150px;
         border-radius: 50%;
+    }
+
+    .social_icons {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        color: white;
+
+        svg {
+            font-size: 1.8em;
+        }
     }
 }
 
