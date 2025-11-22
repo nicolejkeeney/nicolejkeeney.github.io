@@ -3,8 +3,7 @@ import {
   Main,
   Timeline,
   Expertise,
-  Project,
-  Contact,
+  Publications,
   Navigation,
   Footer,
 } from "./components";
@@ -12,7 +11,7 @@ import FadeIn from './components/FadeIn';
 import './index.scss';
 
 function App() {
-    const [mode, setMode] = useState<string>('dark');
+    const [mode, setMode] = useState<string>('light');
 
     const handleModeChange = () => {
         if (mode === 'dark') {
@@ -33,8 +32,8 @@ function App() {
             <Main/>
             <Expertise/>
             <Timeline/>
-            <Project/>
-            <Contact/>
+            <Publications/>
+            {/* <Project/> */}
         </FadeIn>
         <Footer />
     </div>
