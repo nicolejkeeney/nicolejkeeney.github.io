@@ -51,14 +51,14 @@ export const timelineData: TimelineItemData[] = [
       },
     ],
     positions: [
-      {
-        title: 'Research Software Engineer',
-        date: 'Jan 2026 - present',
-        description: '',
-      },
+      // {
+      //   title: 'Research Software Engineer',
+      //   date: 'Jan 2026 - Present',
+      //   description: '',
+      // },
       {
         title: 'Scientific Developer (part-time)',
-        date: 'May 2024 - Dec 2025',
+        date: 'May 2024 - present',
         description: '',
       },
       {
