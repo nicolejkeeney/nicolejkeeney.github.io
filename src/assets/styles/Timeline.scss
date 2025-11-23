@@ -44,12 +44,17 @@
     }
 }
 
+// Timeline-specific h1 styling to reduce spacing
+#history h1 {
+    margin-bottom: 1.5rem;
+}
+
 // Filter controls
 .filter-controls {
     display: flex;
     justify-content: center;
     gap: 1rem;
-    margin: 2rem 0 1.5rem;
+    margin: 0 0 2rem;
     flex-wrap: wrap;
 }
 
