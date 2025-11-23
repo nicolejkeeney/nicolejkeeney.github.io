@@ -63,6 +63,11 @@ function Navigation({parentToChild, modeChange}: any) {
       <p className="mobile-menu-top"><ListIcon/>Menu</p>
       <Divider />
       <List>
+        <ListItem key="Home" disablePadding>
+          <ListItemButton sx={{ textAlign: 'center' }} onClick={() => scrollToSection('main')}>
+            <ListItemText primary="Home" />
+          </ListItemButton>
+        </ListItem>
         {navItems.map((item) => (
           <ListItem key={item[0]} disablePadding>
             <ListItemButton sx={{ textAlign: 'center' }} onClick={() => scrollToSection(item[1])}>

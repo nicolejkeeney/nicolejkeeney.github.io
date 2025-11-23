@@ -42,7 +42,7 @@ const labelsThird = [
     "climate model analysis",
     "cryospheric sciences",
     "climate/hazard dataset generation",
-    "atmospheric modelling for public health applications",
+    "environmental health sciences",
 ];
 
 const labelsFourth = [
