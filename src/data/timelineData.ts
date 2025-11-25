@@ -81,6 +81,11 @@ export const timelineData: TimelineItemData[] = [
         description: 'Thesis: A Spatially and Temporally Disaggregated 21st Century Global Flood Record for Flood Impact Analysis',
         links: [
           {
+            type: 'project',
+            title: 'Flood Dataset Dashboard',
+            url: 'https://flood-dataset-dashboard.streamlit.app/'
+          },
+          {
             type: 'github',
             title: 'emdat-modis-flood-dataset',
             url: 'https://github.com/nicolejkeeney/emdat-modis-flood-dataset'

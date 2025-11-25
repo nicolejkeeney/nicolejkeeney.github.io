@@ -158,5 +158,9 @@ p, a, h1, h2, h3, h4, h5, label, button {
     .items-container {
       padding: 5% 5%;
     }
+
+    .light-mode .about-section {
+      background-attachment: scroll;
+    }
   }
 }
