@@ -30,3 +30,5 @@ Deploy to GitHub Pages:
 ```
 npm run deploy
 ```
+
+Website is hosted freely through GitHub Pages. The deployed version is in the branch `gh-pages`, which syncs automatically with `main` upon running `npm run deploy`.
