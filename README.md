@@ -9,7 +9,24 @@ Webpage is a single scroll page that includes expertise, work history, and publi
 Hosted freely through GitHub pages.
 
 
-To build the website: 
+## Building the Website
+
+Install dependencies:
+```
+npm install
+```
+
+Run locally for development:
+```
+npm start
+```
+
+Build for production:
+```
+npm run build
+```
+
+Deploy to GitHub Pages:
 ```
 npm run deploy
 ```
