@@ -87,8 +87,8 @@ export const timelineData: TimelineItemData[] = [
           },
           {
             type: 'github',
-            title: 'emdat-modis-flood-dataset',
-            url: 'https://github.com/nicolejkeeney/emdat-modis-flood-dataset'
+            title: 'thesis codebase',
+            url: 'https://github.com/nicolejkeeney/thesis-flood-impact-analysis-2025'
           }
         ]
       }
