@@ -82,7 +82,12 @@ export const timelineData: TimelineItemData[] = [
         links: [
           {
             type: 'project',
-            title: 'Flood Dataset Dashboard',
+            title: 'Conference abstract & poster',
+            url: 'https://doi.org/10.22541/essoar.176556342.22758821/v1'
+          },
+          {
+            type: 'project',
+            title: 'Flood dataset dashboard',
             url: 'https://flood-dataset-dashboard.streamlit.app/'
           },
           {
