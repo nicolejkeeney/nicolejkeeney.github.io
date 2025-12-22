@@ -52,7 +52,7 @@ export const timelineData: TimelineItemData[] = [
     ],
     positions: [
       {
-        title: 'Research Software Engineer (full time)',
+        title: 'Research Software Engineer',
         date: 'Jan 2026 - Present',
         description: '',
       },
