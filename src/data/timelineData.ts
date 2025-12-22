@@ -52,13 +52,13 @@ export const timelineData: TimelineItemData[] = [
     ],
     positions: [
       {
-        title: 'Research Software Engineer',
+        title: 'Research Software Engineer (full time)',
         date: 'Jan 2026 - Present',
         description: '',
       },
       {
-        title: 'Scientific Developer (part-time)',
-        date: 'May 2024 - present',
+        title: 'Scientific Developer (part time)',
+        date: 'May 2024 - Dec 2025',
         description: '',
       },
       {
@@ -126,7 +126,7 @@ export const timelineData: TimelineItemData[] = [
     ],
     positions: [
       {
-        title: 'Faculty Research Assistant (half-time)',
+        title: 'Faculty Research Assistant (half time)',
         date: 'Jan 2021 - Jan 2022',
         description: '',
       },
@@ -158,7 +158,7 @@ export const timelineData: TimelineItemData[] = [
     ],
     positions: [
       {
-        title: 'Junior Specialist (half-time)',
+        title: 'Junior Specialist (half time)',
         date: 'Jan 2021 - Feb 2022',
         description: '',
       },
