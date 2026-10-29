@@ -18,7 +18,7 @@ function Main() {
         </div>
         <div className="content">
           <h1>Nicole Keeney</h1>
-          <p>Research software engineer building climate data tools and open science infrastructure.</p>
+          <p>Geospatial data engineer and full stack developer building climate data tools.</p>
 
           <div className="mobile_social_icons">
             <a href="https://github.com/nicolejkeeney" target="_blank" rel="noreferrer"><GitHubIcon/></a>

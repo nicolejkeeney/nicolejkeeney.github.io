@@ -5,6 +5,8 @@ import { faFileAlt } from '@fortawesome/free-solid-svg-icons';
 import '../assets/styles/Publications.scss';
 import { publications, Publication } from '../data/publicationsData';
 
+const MY_NAME = "Keeney, N.";
+
 function Publications() {
   return (
     <div className="publications-container" id="publications">
@@ -17,7 +19,14 @@ function Publications() {
                 <FontAwesomeIcon icon={faFileAlt} />
               </div>
               <div className="publication-details">
-                <div className="publication-authors">{pub.authors}</div>
+                <div className="publication-authors">
+                  {pub.authors.split(MY_NAME).map((part, i) => (
+                    <React.Fragment key={i}>
+                      {i > 0 && <strong>{MY_NAME}</strong>}
+                      {part}
+                    </React.Fragment>
+                  ))}
+                </div>
                 <div className="publication-year">({pub.year})</div>
                 <h3 className="publication-title">
                   <a href={pub.doiUrl} target="_blank" rel="noopener noreferrer">

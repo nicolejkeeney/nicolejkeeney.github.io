@@ -37,7 +37,7 @@ export const timelineData: TimelineItemData[] = [
     dateRange: 'June 2022 - Present',
     category: ExperienceCategory.Industry,
     icon: faBriefcase,
-    sharedDescription: 'Contributing to open source code development and data engineering to support the Cal-Adapt: Analytics Engine, a cloud-based climate data analytics platform for California\'s energy sector.\n\nLead the execution and optimization of cloud workflows on an AWS ParallelCluster for quality control and data standardization of weather data from 1400+ stations.',
+    sharedDescription: 'Build data infrastructure, web tools, and open source software for Cal-Adapt, California\'s climate data platform for researchers, planners, and the energy sector.\n\nCore contributor to climakitae, an open source Python package for accessing and analyzing Cal-Adapt climate data.\n\nManage the Cal-Adapt climate data catalog, including loading new datasets and running the API that makes them searchable.\n\nBuild pipelines that generate climate hazard datasets, like extreme heat and heat wave metrics.\n\nLead technical development of the Cal-Adapt: Analytics Engine website, which provides guidance and resources for using California climate data.\n\nLed the execution and optimization of cloud workflows on an AWS ParallelCluster for quality control and standardization of weather data from 1400+ stations.',
     sharedLinks: [
       {
         type: 'github',
@@ -48,6 +48,11 @@ export const timelineData: TimelineItemData[] = [
         type: 'github',
         title: 'historical-obs-platform',
         url: 'https://github.com/Eagle-Rock-Analytics/historical-obs-platform'
+      },
+      {
+        type: 'other',
+        title: 'Cal-Adapt: Analytics Engine website',
+        url: 'https://analytics.cal-adapt.org'
       },
     ],
     positions: [
@@ -78,21 +83,16 @@ export const timelineData: TimelineItemData[] = [
       {
         title: 'M.S. in Hydrologic Science & Engineering',
         date: 'Aug 2023 - Dec 2025',
-        description: 'Thesis: A Spatially and Temporally Disaggregated 21st Century Global Flood Record for Flood Impact Analysis',
+        description: 'Thesis: A Spatially and Temporally Disaggregated 21st Century Global Flood Record for Flood Impact Analysis\n\nBuilt a global dataset of flood events from 2000 to 2024 by combining disaster records with satellite imagery, then used it to study how extreme precipitation drives flood impacts. Ran the processing on HPC and presented the work at the AGU Fall Meeting 2025.',
         links: [
           {
-            type: 'project',
+            type: 'publication',
             title: 'Conference abstract & poster',
             url: 'https://doi.org/10.22541/essoar.176556342.22758821/v1'
           },
           {
-            type: 'project',
-            title: 'Flood dataset dashboard',
-            url: 'https://flood-dataset-dashboard.streamlit.app/'
-          },
-          {
             type: 'github',
-            title: 'thesis codebase',
+            title: 'thesis-flood-impact-analysis-2025',
             url: 'https://github.com/nicolejkeeney/thesis-flood-impact-analysis-2025'
           }
         ]
@@ -109,7 +109,7 @@ export const timelineData: TimelineItemData[] = [
     sharedDescription: 'Contributed to the development of a cloud-optimized Python toolkit to streamline polar climate model validation using satellite data. Project emphasized interactive plotting techniques and data management with Google Cloud.\n\nBuilt an interactive Jupyter Book (a collection of Python notebooks) to evaluate drivers of winter Arctic sea ice growth using data from NASA\'s ICESat-2 satellite. The project is still actively maintained by my awesome research advisor, Alek.',
     sharedLinks: [
       {
-        type: 'project',
+        type: 'other',
         title: 'Arctic Sea Ice Jupyter Book',
         url: 'https://www.icesat-2-sea-ice-state.info/content/0_home.html'
       },

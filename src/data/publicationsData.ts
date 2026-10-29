@@ -9,6 +9,38 @@ export interface Publication {
 
 export const publications: Publication[] = [
   {
+    authors: "Keeney, N., Chen, C., Schroeder, N., Ordonez, A., Lehmer, E., Ford, V., Goldenson, N., Kingdon, C., Liu, T., McClenny, B., Galey, B., Krantz, W., Doherty, O., Di Cecco, G., Machuca, V., Chaudhry, N.",
+    year: 2026,
+    title: "climakitae",
+    journal: "Zenodo (software)",
+    doi: "10.5281/zenodo.18111935",
+    doiUrl: "https://doi.org/10.5281/zenodo.18111935"
+  },
+  {
+    authors: "Ford, V., Roman, J., Machuca, V., Ordonez, A., Keeney, N., Schroeder, N., Doherty, O.",
+    year: 2026,
+    title: "Preparing for the Exceptional: Extreme Meteorological Years in Energy System Planning",
+    journal: "Zenodo (report)",
+    doi: "10.5281/zenodo.21401751",
+    doiUrl: "https://doi.org/10.5281/zenodo.21401751"
+  },
+  {
+    authors: "Ford, V., Keeney, N., Machuca, V., Inda Díaz, H., McClenny, E., Schroeder, N., Di Cecco, G.",
+    year: 2026,
+    title: "Historical Observations Data Platform QAQC Scripts",
+    journal: "Zenodo (software)",
+    doi: "10.5281/zenodo.16370139",
+    doiUrl: "https://doi.org/10.5281/zenodo.16370139"
+  },
+  {
+    authors: "Ford, V., Keeney, N., Machuca, V., Inda Díaz, H., McClenny, E., Schroeder, N., Di Cecco, G.",
+    year: 2025,
+    title: "Historical Observations Data Platform Weather Stations",
+    journal: "Zenodo (dataset)",
+    doi: "10.5281/zenodo.23422582",
+    doiUrl: "https://doi.org/10.5281/zenodo.23422582"
+  },
+  {
     authors: "Weaver, A., Keeney, N., Head, J., Heaney, A., Camponuri, S., Collender, P., Bhattachan, A., Okin, G., Eisen, E., Sondermeyer-Cooksey, G., Yu, A., Vugia, D., Jain, A., Balmes, J., Taylor, J., Remais, J., Strickland, M.",
     year: 2025,
     title: "Estimating the exposure-response relationship between fine mineral dust concentration and coccidioidomycosis incidence using speciated particulate matter data: A longitudinal surveillance study",
