@@ -37,7 +37,7 @@ p, a, h1, h2, h3, h4, h5, label, button {
   justify-content: space-between;
   background-color: #0d1116;
 
-  button {
+  button, a {
     font-size: 1.1rem;
     font-family: "Lato", sans-serif;
     text-transform: initial;
@@ -46,6 +46,11 @@ p, a, h1, h2, h3, h4, h5, label, button {
 
   svg {
     cursor: pointer;
+  }
+
+  button:hover, a:hover, button:hover svg, svg:hover {
+    color: #9A275A;
+    transition: color .15s ease-in-out;
   }
 }
 
@@ -117,6 +122,14 @@ p, a, h1, h2, h3, h4, h5, label, button {
 
   .navigation-bar svg {
     color: #0d1116;
+
+    &:hover {
+      color: #9A275A;
+    }
+  }
+
+  .navigation-bar a:hover {
+    color: #9A275A;
   }
 
   .about-section {

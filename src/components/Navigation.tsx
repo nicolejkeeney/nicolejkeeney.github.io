@@ -15,6 +15,7 @@ import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
 import MenuIcon from '@mui/icons-material/Menu';
+import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 import Toolbar from '@mui/material/Toolbar';
 
 const drawerWidth = 240;
@@ -99,23 +100,25 @@ function Navigation({parentToChild, modeChange}: any) {
           >
             <MenuIcon />
           </IconButton>
-          {mode === 'dark' ? (
-            <LightModeIcon onClick={() => modeChange()} sx={{ cursor: 'pointer' }}/>
-          ) : (
-            <DarkModeIcon onClick={() => modeChange()} sx={{ cursor: 'pointer' }}/>
-          )}
-          <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
-            <IconButton onClick={() => scrollToSection('main')} sx={{ color: '#fff' }}>
-              <HomeIcon />
-            </IconButton>
-            {navItems.map((item) => (
-              <Button key={item[0]} onClick={() => scrollToSection(item[1])} sx={{ color: '#fff' }}>
-                {item[0]}
+          <IconButton onClick={() => scrollToSection('main')} sx={{ color: '#fff', display: { xs: 'none', sm: 'inline-flex' } }}>
+            <HomeIcon />
+          </IconButton>
+          <Box sx={{ display: 'flex', alignItems: 'center' }}>
+            <Box sx={{ display: { xs: 'none', sm: 'block' }, mr: 2 }}>
+              {navItems.map((item) => (
+                <Button key={item[0]} onClick={() => scrollToSection(item[1])} sx={{ color: '#fff' }}>
+                  {item[0]}
+                </Button>
+              ))}
+              <Button href={RESUME_URL} target="_blank" rel="noreferrer" endIcon={<OpenInNewIcon />} sx={{ color: '#fff' }}>
+                Resume
               </Button>
-            ))}
-            <Button href={RESUME_URL} target="_blank" rel="noreferrer" sx={{ color: '#fff' }}>
-              Resume
-            </Button>
+            </Box>
+            {mode === 'dark' ? (
+              <LightModeIcon onClick={() => modeChange()} sx={{ cursor: 'pointer' }}/>
+            ) : (
+              <DarkModeIcon onClick={() => modeChange()} sx={{ cursor: 'pointer' }}/>
+            )}
           </Box>
         </Toolbar>
       </AppBar>
