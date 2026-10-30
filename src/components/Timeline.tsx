@@ -28,7 +28,7 @@ const LINK_TYPE_TO_COLOR = {
   publication: '#E36588',
   github: '#103900',
   documentation: '#9A275A',
-  other: '#2C9670',
+  other: '#2E7DB8',
 };
 
 function Timeline() {

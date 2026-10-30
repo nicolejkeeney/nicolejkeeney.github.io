@@ -1,3 +1,7 @@
+:root {
+  --hover-color: #9A275A;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -24,7 +28,7 @@ a {
 }
 
 a:hover {
-  color: #5000ca;
+  color: var(--hover-color);
   transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
 }
 
@@ -49,7 +53,7 @@ p, a, h1, h2, h3, h4, h5, label, button {
   }
 
   button:hover, a:hover, button:hover svg, svg:hover {
-    color: #9A275A;
+    color: var(--hover-color);
     transition: color .15s ease-in-out;
   }
 }
@@ -116,7 +120,7 @@ p, a, h1, h2, h3, h4, h5, label, button {
   }
 
   a:hover {
-    color: #5000ca;
+    color: var(--hover-color);
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
   }
 
@@ -124,12 +128,8 @@ p, a, h1, h2, h3, h4, h5, label, button {
     color: #0d1116;
 
     &:hover {
-      color: #9A275A;
+      color: var(--hover-color);
     }
-  }
-
-  .navigation-bar a:hover {
-    color: #9A275A;
   }
 
   .about-section {

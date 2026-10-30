@@ -80,7 +80,7 @@
                     transition: color 0.3s ease;
 
                     &:hover {
-                        color: #667eea;
+                        color: var(--hover-color);
                     }
                 }
             }
@@ -100,7 +100,7 @@
                     transition: color 0.3s ease;
 
                     &:hover {
-                        color: #9A275A;
+                        color: var(--hover-color);
                         text-decoration: underline;
                     }
                 }
