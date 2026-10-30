@@ -79,23 +79,24 @@ export const timelineData: TimelineItemData[] = [
     dateRange: 'Aug 2023 - Dec 2025',
     category: ExperienceCategory.Academia,
     icon: faGraduationCap,
+    sharedDescription: 'Thesis: A Spatially and Temporally Disaggregated 21st Century Global Flood Record for Flood Impact Analysis\n\nBuilt a global dataset of flood events from 2000 to 2024 by combining disaster records with satellite imagery, then used it to study how extreme precipitation drives flood impacts. Ran the processing on HPC and presented the work at the AGU Fall Meeting 2025.',
+    sharedLinks: [
+      {
+        type: 'publication',
+        title: 'Conference abstract & poster',
+        url: 'https://doi.org/10.22541/essoar.176556342.22758821/v1'
+      },
+      {
+        type: 'github',
+        title: 'thesis-flood-impact-analysis-2025',
+        url: 'https://github.com/nicolejkeeney/thesis-flood-impact-analysis-2025'
+      }
+    ],
     positions: [
       {
         title: 'M.S. in Civil & Environmental Engineering',
         date: 'Aug 2023 - Dec 2025',
-        description: 'Thesis: A Spatially and Temporally Disaggregated 21st Century Global Flood Record for Flood Impact Analysis\n\nBuilt a global dataset of flood events from 2000 to 2024 by combining disaster records with satellite imagery, then used it to study how extreme precipitation drives flood impacts. Ran the processing on HPC and presented the work at the AGU Fall Meeting 2025.',
-        links: [
-          {
-            type: 'publication',
-            title: 'Conference abstract & poster',
-            url: 'https://doi.org/10.22541/essoar.176556342.22758821/v1'
-          },
-          {
-            type: 'github',
-            title: 'thesis-flood-impact-analysis-2025',
-            url: 'https://github.com/nicolejkeeney/thesis-flood-impact-analysis-2025'
-          }
-        ]
+        description: '',
       },
       {
         title: 'Graduate Research Assistant',
