@@ -68,7 +68,7 @@ function Expertise() {
                 <div className="skill">
                     <FontAwesomeIcon icon={faDatabase} size="3x"/>
                     <h3>Geospatial Data Engineering</h3>
-                    <p>I have extensive experience building pipelines that process large climate and earth science datasets in parallel on computing clusters and in the cloud, and turn them into cloud-optimized data that's fast to access. I also manage my team's climate data catalog, including loading new datasets and running the service that makes them searchable.</p>
+                    <p>I have extensive experience building pipelines that process large climate and earth science datasets in parallel on computing clusters and in the cloud, and turn them into cloud-optimized data that's fast to access. I also make our climate datasets easy to search and browse using STAC and intake-esm, open source tools for cataloging geospatial data.</p>
                     <div className="flex-chips">
                         {labelsFirst.map((label, index) => (
                             <Chip key={index} className='chip' label={label} />
