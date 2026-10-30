@@ -101,7 +101,7 @@ function Expertise() {
                 <div className="skill">
                     <FontAwesomeIcon icon={faEarthAmericas} size="3x"/>
                     <h3>Atmospheric & Earth Science</h3>
-                    <p>With extensive research experience across atmospheric & earth science disciplines, and degrees in Hydrologic Science & Engineering (M.S.) and Atmospheric Science (B.A.), I bring a strong scientific perspective to my software engineering work.</p>
+                    <p>With extensive research experience across atmospheric & earth science disciplines, and degrees in Civil & Environmental Engineering (M.S.) and Atmospheric Science (B.A.), I bring a strong scientific perspective to my software engineering work.</p>
                     <div className="flex-chips">
                         {labelsFourth.map((label, index) => (
                             <Chip key={index} className='chip' label={label} />

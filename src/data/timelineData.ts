@@ -81,7 +81,7 @@ export const timelineData: TimelineItemData[] = [
     icon: faGraduationCap,
     positions: [
       {
-        title: 'M.S. in Hydrologic Science & Engineering',
+        title: 'M.S. in Civil & Environmental Engineering',
         date: 'Aug 2023 - Dec 2025',
         description: 'Thesis: A Spatially and Temporally Disaggregated 21st Century Global Flood Record for Flood Impact Analysis\n\nBuilt a global dataset of flood events from 2000 to 2024 by combining disaster records with satellite imagery, then used it to study how extreme precipitation drives flood impacts. Ran the processing on HPC and presented the work at the AGU Fall Meeting 2025.',
         links: [
@@ -96,6 +96,11 @@ export const timelineData: TimelineItemData[] = [
             url: 'https://github.com/nicolejkeeney/thesis-flood-impact-analysis-2025'
           }
         ]
+      },
+      {
+        title: 'Graduate Research Assistant',
+        date: 'Aug 2023 - Dec 2025',
+        description: '',
       }
     ]
     
