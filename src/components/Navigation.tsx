@@ -19,6 +19,7 @@ import Toolbar from '@mui/material/Toolbar';
 
 const drawerWidth = 240;
 const navItems = [['Expertise', 'expertise'], ['Career History', 'history'], ['Publications','publications']];
+const RESUME_URL = `${process.env.PUBLIC_URL}/Nicole_Keeney_Resume.pdf`;
 
 function Navigation({parentToChild, modeChange}: any) {
 
@@ -75,6 +76,11 @@ function Navigation({parentToChild, modeChange}: any) {
             </ListItemButton>
           </ListItem>
         ))}
+        <ListItem key="Resume" disablePadding>
+          <ListItemButton component="a" href={RESUME_URL} target="_blank" rel="noreferrer" sx={{ textAlign: 'center' }}>
+            <ListItemText primary="Resume" />
+          </ListItemButton>
+        </ListItem>
       </List>
     </Box>
   );
@@ -107,6 +113,9 @@ function Navigation({parentToChild, modeChange}: any) {
                 {item[0]}
               </Button>
             ))}
+            <Button href={RESUME_URL} target="_blank" rel="noreferrer" sx={{ color: '#fff' }}>
+              Resume
+            </Button>
           </Box>
         </Toolbar>
       </AppBar>
