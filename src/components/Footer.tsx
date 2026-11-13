@@ -13,6 +13,7 @@ function Footer() {
       <p>Created by Nicole Keeney
         <br/>Original website template by <a href="https://github.com/yujisatojr/react-portfolio-template" target="_blank" rel="noreferrer" style={{color: '#2E7DB8'}}>Yuji Sato</a>
         <br/>Background artwork by <a href="https://chriskeeney.com" target="_blank" rel="noreferrer" style={{color: '#2E7DB8'}}>Chris Keeney</a>
+        <br/>This site uses Google Analytics to count visits. <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noreferrer" style={{color: '#2E7DB8'}}>How Google uses this data</a>
       </p>    
     </footer>
   );
